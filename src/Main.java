@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,17 +18,10 @@ public class Main {
 
 
     public static Tamagotchi chooseName(){
-        String name;
-        while (true) {
-            try {
-                System.out.println("Wie möchtest du dein Haustier nennen?");
-                name = new Scanner(System.in).nextLine();
-                break;
-            }
-            catch (InputMismatchException e){
-                System.out.println("Bitte gibt ");
-            }
-        }
+
+        System.out.println("Wie möchtest du dein Haustier nennen?");
+        String name = new Scanner(System.in).nextLine();
+
         return new Tamagotchi(name);
     }
 

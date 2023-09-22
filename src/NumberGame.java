@@ -9,9 +9,9 @@ public class NumberGame {
         int input = 0;
         int tries = 0;
 
-        System.out.println("Ich habe eine Nummer zwischen 0 und 50 im Kopf.");
+        System.out.println("Ich habe eine Nummer zwischen 0 und 25 im Kopf.");
         System.out.println("Gebe einen Tip ab.");
-        int num = new Random().nextInt(51);
+        int num = new Random().nextInt(26);
 
         while (true){
 
@@ -33,12 +33,12 @@ public class NumberGame {
                 System.out.println("Die Zahl ist kleiner.");
             }
             else {
-                System.out.println("Herzlichen Glueckwunsch! Du hast die Zahl in " + tries + " Versuchen erraten");
+                System.out.println("Herzlichen Glueckwunsch! Du hast die Zahl in " + tries + " Versuchen erraten. Aber reicht es, um dein Haustier glücklich zu machen?");
                 break;
             }
         }
 
-        return tries <= 3;
+        return tries <= 4;
     }
 
 
