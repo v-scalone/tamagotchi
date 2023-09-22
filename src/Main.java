@@ -17,6 +17,7 @@ public class Main {
 
     }
 
+
     public static Tamagotchi chooseName(){
         String name;
         while (true) {
